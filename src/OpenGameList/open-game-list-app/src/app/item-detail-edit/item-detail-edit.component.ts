@@ -4,11 +4,11 @@ import { Item } from '../item';
 import { ItemService } from '../item.service';
 
 @Component({
-    selector: 'item-detail',
-    templateUrl: './item-detail.component.html',
-    styleUrls: ['./item-detail.component.css']
+    selector: 'item-detail-edit',
+    templateUrl: './item-detail-edit.component.html',
+    styleUrls: ['./item-detail-edit.component.css']
 })
-export class ItemDetailComponent implements OnInit {
+export class ItemDetailEditComponent implements OnInit {
 
     item: Item;
 
@@ -48,7 +48,7 @@ export class ItemDetailComponent implements OnInit {
         this.itemService.update(item).subscribe((data) => {
             this.item = data;
             console.log('Item ' + this.item.Id + ' has been updated.');
-            this.router.navigate(['']);
+            this.router.navigate(['item/view', this.item.Id]);
         }, (error) => console.log(error));
     }
 
@@ -58,6 +58,10 @@ export class ItemDetailComponent implements OnInit {
             console.log('Item ' + id + ' has been deleted.');
             this.router.navigate(['']);
         }, (error) => console.log(error));
+    }
+
+    onItemDetailView(item: Item) {
+        this.router.navigate(['item/view', item.Id]);
     }
 
 }
