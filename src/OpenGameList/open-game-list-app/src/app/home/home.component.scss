@@ -1,19 +1,22 @@
+@import "~sass/variables";
+
 item-list {
     min-width: 332px;
     border: 1px solid #aaaaaa;
     display: inline-block;
     margin: 0 10px;
     padding: 10px;
-}
 
-    item-list.latest {
+    &.latest {
         background-color: #f9f9f9;
     }
 
-    item-list.most-viewed {
+    &.most-viewed {
         background-color: #f0f0f0;
     }
 
-    item-list.random {
+    &.random {
         background-color: #e9e9e9;
     }
+
+}

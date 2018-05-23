@@ -7,6 +7,10 @@ import {
     Http
 } from '@angular/http';
 
+import {
+    Router
+} from '@angular/router';
+
 @Component({
     selector: 'opengamelist',
     templateUrl: './app.component.html',
@@ -16,10 +20,15 @@ export class AppComponent implements OnInit {
 
     title: string = "OpenGameList";
 
-    constructor() {
+    constructor(public router: Router) {
     }
 
-    
     ngOnInit() {
+    }
+
+    isActive(data: any[]): boolean {
+        return this
+            .router
+            .isActive(this.router.createUrlTree(data), true);
     }
 }
