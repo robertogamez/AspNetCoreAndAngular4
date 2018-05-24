@@ -33,6 +33,11 @@ export class ItemDetailViewComponent implements OnInit {
 
     onItemDetailEdit(item: Item) {
         this.router.navigate(['item/edit', item.Id]);
+        return false;
+    }
+
+    onBack() {
+        this.router.navigate(['']);
     }
 
 }
