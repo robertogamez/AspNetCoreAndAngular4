@@ -207,6 +207,10 @@ var ItemDetailViewComponent = (function () {
     };
     ItemDetailViewComponent.prototype.onItemDetailEdit = function (item) {
         this.router.navigate(['item/edit', item.Id]);
+        return false;
+    };
+    ItemDetailViewComponent.prototype.onBack = function () {
+        this.router.navigate(['']);
     };
     return ItemDetailViewComponent;
 }());
@@ -658,7 +662,7 @@ exports = module.exports = __webpack_require__(15)();
 
 
 // module
-exports.push([module.i, "item-list {\n  min-width: 332px;\n  border: 1px solid #aaaaaa;\n  display: inline-block;\n  margin: 0 10px;\n  padding: 10px; }\n  item-list.latest {\n    background-color: #f9f9f9; }\n  item-list.most-viewed {\n    background-color: #f0f0f0; }\n  item-list.random {\n    background-color: #e9e9e9; }\n", ""]);
+exports.push([module.i, "", ""]);
 
 // exports
 
@@ -676,7 +680,7 @@ exports = module.exports = __webpack_require__(15)();
 
 
 // module
-exports.push([module.i, ".item-container {\n  width: 600px; }\n\n.item-tab-menu {\n  margin-right: 30px; }\n\n.item-tab-menu span {\n  background-color: #dddddd;\n  border: 1px solid #666666;\n  border-bottom: 0;\n  cursor: pointer;\n  display: block;\n  float: right;\n  margin: 0 0 -1px 5px;\n  padding: 5px 10px 4px 10px;\n  text-align: center;\n  width: 60px; }\n\n.item-tab-menu span.selected {\n  background-color: #eeeeee;\n  cursor: auto;\n  font-weight: bold;\n  padding-bottom: 5px; }\n\n.item-details {\n  background-color: #eeeeee;\n  border: 1px solid black;\n  clear: both;\n  margin: 0;\n  padding: 5px 10px; }\n\n.item-details * {\n  vertical-align: middle; }\n\n.item-details .mode {\n  font-size: 0.8em;\n  color: #777777; }\n\n.item-details ul li {\n  padding: 5px 0; }\n\n.item-details input[type=\"text\"] {\n  display: block;\n  width: 100%; }\n\n.item-details textarea {\n  display: block;\n  width: 100%;\n  height: 60px; }\n\n.commands {\n  text-align: right;\n  margin: 10px 20px 10px 10px; }\n", ""]);
+exports.push([module.i, "", ""]);
 
 // exports
 
@@ -694,7 +698,7 @@ exports = module.exports = __webpack_require__(15)();
 
 
 // module
-exports.push([module.i, ".item-container {\n  width: 600px; }\n\n.item-tab-menu {\n  margin-right: 30px; }\n\n.item-tab-menu span {\n  background-color: #dddddd;\n  border: 1px solid #666666;\n  border-bottom: 0;\n  cursor: pointer;\n  display: block;\n  float: right;\n  margin: 0 0 -1px 5px;\n  padding: 5px 10px 4px 10px;\n  text-align: center;\n  width: 60px; }\n\n.item-tab-menu span.selected {\n  background-color: #eeeeee;\n  cursor: auto;\n  font-weight: bold;\n  padding-bottom: 5px; }\n\n.item-details {\n  background-color: #eeeeee;\n  border: 1px solid black;\n  clear: both;\n  margin: 0;\n  padding: 5px 10px; }\n\n.item-details * {\n  vertical-align: middle; }\n\n.item-details .mode {\n  font-size: 0.8em;\n  color: #777777; }\n\n.item-details ul li {\n  padding: 5px 0; }\n", ""]);
+exports.push([module.i, "", ""]);
 
 // exports
 
@@ -712,7 +716,7 @@ exports = module.exports = __webpack_require__(15)();
 
 
 // module
-exports.push([module.i, "ul.items li {\n  cursor: pointer; }\n\nul.items li.selected {\n  background-color: #ccc; }\n", ""]);
+exports.push([module.i, "", ""]);
 
 // exports
 
@@ -786,35 +790,35 @@ module.exports = "<h2>{{title}}</h2>\r\n<div>\r\n    OpenGameList: a production-
 /***/ 317:
 /***/ (function(module, exports) {
 
-module.exports = "<nav class=\"navbar navbar-default navbar-fixed-top\">\r\n    <div class=\"container-fluid\">\r\n        <input type=\"checkbox\" id=\"navbar-toggle-cbox\" />\r\n        <div class=\"navbar-header\">\r\n            <label for=\"navbar-toggle-cbox\" class=\"navbar-toggle collapsed\"\r\n                   data-toggle=\"collapse\" data-target=\"#navbar\" aria-expanded=\"false\"\r\n                   aria-controls=\"navbar\">\r\n                <span class=\"sr-only\">Toggle navigation</span>\r\n                <span class=\"icon-bar\"></span>\r\n                <span class=\"icon-bar\"></span>\r\n                <span class=\"icon-bar\"></span>\r\n            </label>\r\n            <a class=\"navbar-brand\" href=\"#\">\r\n                <img alt=\"logo\" src=\"../assets/img/logo.svg\" />\r\n            </a>\r\n        </div>\r\n        <div class=\"collapse navbar-collapse\" id=\"navbar\">\r\n            <ul class=\"nav navbar-nav\">\r\n                <li [class.active]=\"isActive([''])\">\r\n                    <a class=\"home\"  \r\n                       [routerLink]=\"['']\">Home</a>\r\n                </li>\r\n                <li [class.active]=\"isActive(['about'])\">\r\n                    <a class=\"about\" \r\n                       [routerLink]=\"['about']\">About</a>\r\n                </li>\r\n                <li [class.active]=\"isActive(['login'])\">\r\n                    <a class=\"login\" \r\n                       [routerLink]=\"['login']\">Login</a>\r\n                </li>\r\n                <li [class.active]=\"isActive(['item/edit', 0])\">\r\n                    <a class=\"add\" \r\n                       [routerLink]=\"['item/edit', 0]\">Add</a>\r\n                </li>\r\n            </ul>\r\n        </div>\r\n    </div>\r\n</nav>\r\n<h1 class=\"header\">{{title}}</h1>\r\n<div class=\"main-container\">\r\n    <router-outlet></router-outlet>\r\n</div>"
+module.exports = "<nav class=\"navbar navbar-inverse navbar-fixed-top\">\r\n    <div class=\"container-fluid\">\r\n        <input type=\"checkbox\" id=\"navbar-toggle-cbox\" />\r\n        <div class=\"navbar-header\">\r\n            <label for=\"navbar-toggle-cbox\" class=\"navbar-toggle collapsed\"\r\n                   data-toggle=\"collapse\" data-target=\"#navbar\" aria-expanded=\"false\"\r\n                   aria-controls=\"navbar\">\r\n                <span class=\"sr-only\">Toggle navigation</span>\r\n                <span class=\"icon-bar\"></span>\r\n                <span class=\"icon-bar\"></span>\r\n                <span class=\"icon-bar\"></span>\r\n            </label>\r\n            <a class=\"navbar-brand\" href=\"#\">\r\n                <img alt=\"logo\" src=\"../assets/img/logo.svg\" />\r\n            </a>\r\n        </div>\r\n        <div class=\"collapse navbar-collapse\" id=\"navbar\">\r\n            <ul class=\"nav navbar-nav\">\r\n                <li [class.active]=\"isActive([''])\">\r\n                    <a class=\"home\"  \r\n                       [routerLink]=\"['']\">Home</a>\r\n                </li>\r\n                <li [class.active]=\"isActive(['about'])\">\r\n                    <a class=\"about\" \r\n                       [routerLink]=\"['about']\">About</a>\r\n                </li>\r\n                <li [class.active]=\"isActive(['login'])\">\r\n                    <a class=\"login\" \r\n                       [routerLink]=\"['login']\">Login</a>\r\n                </li>\r\n                <li [class.active]=\"isActive(['item/edit', 0])\">\r\n                    <a class=\"add\" \r\n                       [routerLink]=\"['item/edit', 0]\">Add</a>\r\n                </li>\r\n            </ul>\r\n        </div>\r\n    </div>\r\n</nav>\r\n<h1 class=\"header\">{{title}}</h1>\r\n<div class=\"main-container\">\r\n    <router-outlet></router-outlet>\r\n</div>"
 
 /***/ }),
 
 /***/ 318:
 /***/ (function(module, exports) {
 
-module.exports = "<h1>\r\n    {{title}}\r\n</h1>\r\n<item-list class=\"latest\"></item-list>\r\n<item-list class=\"most-viewed\"></item-list>\r\n<item-list class=\"random\"></item-list>"
+module.exports = "<h2>\r\n    A non-comprehensive directory of open-source video games\r\n    available on the web\r\n</h2>\r\n<div class=\"row\">\r\n    <div class=\"col-md-4\">\r\n        <item-list class=\"latest\"></item-list>\r\n    </div>\r\n    <div class=\"col-md-4\">\r\n        <item-list class=\"most-viewed\"></item-list>\r\n    </div>\r\n    <div class=\"col-md-4\">\r\n        <item-list class=\"random\"></item-list>\r\n    </div>\r\n</div>\r\n\r\n\r\n"
 
 /***/ }),
 
 /***/ 319:
 /***/ (function(module, exports) {
 
-module.exports = "<div *ngIf=\"item\" class=\"item-container\">\r\n    <div class=\"item-tab-menu\">\r\n        <span class=\"selected\">Edit</span>\r\n        <span *ngIf=\"item.Id != 0\"\r\n              (click)=\"onItemDetailView(item)\">View</span>\r\n    </div>\r\n    <div class=\"item-details\">\r\n        <div class=\"mode\">Edit Mode</div>\r\n        <h2>{{item.Title}} - Detail View</h2>\r\n        <ul>\r\n            <li>\r\n                <label>Title:</label>\r\n                <input [(ngModel)]=\"item.Title\" placeholder=\"Insert the title...\" />\r\n            </li>\r\n            <li>\r\n                <label>Description:</label>\r\n                <textarea [(ngModel)]=\"item.Description\" placeholder=\"Insert a suitable description...\"></textarea>\r\n            </li>\r\n        </ul>\r\n        <div *ngIf=\"item.Id == 0\" class=\"commands insert\">\r\n            <input type=\"button\" value=\"Save\" (click)=\"onInsert(item)\" />\r\n            <input type=\"button\" value=\"Cancel\" (click)=\"onBack()\" />\r\n        </div>\r\n        <div *ngIf=\"item.Id != 0\" class=\"commands update\">\r\n            <input type=\"button\" value=\"Update\" (click)=\"onUpdate(item)\" />\r\n            <input type=\"button\" value=\"Delete\" (click)=\"onDelete(item)\" />\r\n            <input type=\"button\" value=\"Cancel\" (click)=\"onItemDetailView(item)\" />\r\n        </div>\r\n    </div>\r\n</div>"
+module.exports = "<div *ngIf=\"item\">\r\n    <h2>\r\n        <a href=\"#\" (click)=\"onBack()\">\r\n            &laquo; Back to Home\r\n        </a>\r\n    </h2>\r\n    <div class=\"item-container\">\r\n        <ul class=\"nav nav-tabs\">\r\n            <li role=\"presentation\" class=\"active\">\r\n                <a href=\"#\">Edit</a>\r\n            </li>\r\n            <li role=\"presentation\" *ngIf=\"item.Id != 0\">\r\n                <a href=\"#\" (click)=\"onItemDetailView(item)\">View</a>\r\n            </li>\r\n        </ul>\r\n        <div class=\"panel panel-default\">\r\n            <div class=\"panel-body\">\r\n               <form class=\"item-detail-edit\">\r\n                   <h3>\r\n                       {{item.Title}}\r\n                       <span class=\"empty-field\" [hidden]=\"dTitle.valid\">\r\n                           Empty Title\r\n                       </span>\r\n                   </h3>\r\n                   <div class=\"form-group has-feedback\" \r\n                        [ngClass]=\"{ 'has-success': dTitle.valid, 'has-error': !dTitle.valid }\">\r\n                       <label for=\"input-title\">Title</label>\r\n                       <input id=\"input-title\" name=\"input-title\"\r\n                              type=\"text\" class=\"form-control\"\r\n                              [(ngModel)]=\"item.Title\"\r\n                              placeholder=\"Insert the title...\"\r\n                              required #dTitle=\"ngModel\" />\r\n                       <span class=\"glyphicon form-control-feedback\" aria-hidden=\"true\"\r\n                             [ngClass]=\"{'glyphicon-ok': dTitle.valid, 'glyphicon-remove': !dTitle.valid}\"></span>\r\n                       <div [hidden]=\"dTitle.valid\" class=\"alert alert-danger\">\r\n                           You need to enter a valid Title.\r\n                       </div>\r\n                   </div>\r\n                   <div class=\"form-group\">\r\n                       <label for=\"input-description\">Description</label>\r\n                       <textarea id=\"input-description\" name=\"input-description\"\r\n                                 class=\"form-control\" [(ngModel)]=\"item.Description\"\r\n                                 placeholder=\"Insert a suitable description...\" required></textarea>\r\n                   </div>\r\n                   <div class=\"form-group\">\r\n                       <label for=\"input-text\">\r\n                           Text\r\n                       </label>\r\n                       <textarea id=\"input-text\" name=\"input-text\"\r\n                                 class=\"form-control\" [(ngModel)]=\"item.Text\"\r\n                                 placeholder=\"Insert a suitable description...\"></textarea>\r\n                   </div>\r\n                   <div *ngIf=\"item.Id == 0\" class=\"commands insert\">\r\n                       <input type=\"button\" class=\"btn btn-primary\"\r\n                              value=\"Save\" (click)=\"onInsert(item)\" />\r\n                       <input type=\"button\" class=\"btn btn-default\"\r\n                              value=\"Cancel\" (click)=\"onBack()\" />\r\n                   </div>\r\n                   <div *ngIf=\"item.Id != 0\" class=\"commands update\">\r\n                       <input type=\"button\" class=\"btn btn-primary\"\r\n                              value=\"Update\" (click)=\"onUpdate(item)\" />\r\n                       <input type=\"button\" class=\"btn btn-danger\"\r\n                              value=\"Delete\" (click)=\"onDelete(item)\" />\r\n                       <input type=\"button\" class=\"btn btn-default\"\r\n                              value=\"Cancel\" (click)=\"onItemDetailView(item)\" />\r\n                   </div>\r\n               </form>\r\n            </div>\r\n        </div>\r\n    </div>\r\n</div>"
 
 /***/ }),
 
 /***/ 320:
 /***/ (function(module, exports) {
 
-module.exports = "<div *ngIf=\"item\" class=\"item-container\">\r\n    <div class=\"item-tab-menu\">\r\n        <span (click)=\"onItemDetailEdit(item)\">Edit</span>\r\n        <span class=\"selected\">View</span>\r\n    </div>\r\n    <div class=\"item-details\">\r\n        <div class=\"mode\">Display Mode</div>\r\n        <h2>{{item.Title}}</h2>\r\n        <p>{{item.Description}}</p>\r\n    </div>\r\n</div>"
+module.exports = "<div *ngIf=\"item\">\r\n    <h2>\r\n        <a href=\"#\" (click)=\"onBack()\">&laquo; Back to Home</a>\r\n    </h2>\r\n    <div class=\"item-container\">\r\n        <ul class=\"nav nav-tabs\">\r\n            <li role=\"presentation\">\r\n                <a href=\"#\" (click)=\"onItemDetailEdit(item)\">Edit</a>\r\n            </li>\r\n            <li role=\"presentation\" class=\"active\">\r\n                <a href=\"#\">View</a>\r\n            </li>\r\n        </ul>\r\n        <div class=\"panel panel-default\">\r\n            <div class=\"panel-body\">\r\n                <div class=\"item-page-panel\">\r\n                    <img src=\"/assets/img/item-image-sample.png\" alt=\"{{item.Title}}\" />\r\n                    <div class=\"caption\">Sample image with caption.</div>\r\n                </div>\r\n                <h3>{{item.Title}}</h3>\r\n                <p>{{item.Description}}</p>\r\n                <p>{{item.Text}}</p>\r\n            </div>\r\n        </div>\r\n    </div>\r\n</div>"
 
 /***/ }),
 
 /***/ 321:
 /***/ (function(module, exports) {
 
-module.exports = "<h2>\r\n    {{title}}\r\n</h2>\r\n<ul class=\"items\">\r\n    <li *ngFor=\"let item of items\"\r\n        [class.selected]=\"item === selectedItem\"\r\n        (click)=\"onSelect(item)\">\r\n        <span>{{item.Title}}</span>\r\n    </li>\r\n</ul>\r\n<!--<item-detail *ngIf=\"selectedItem\" [item]=\"selectedItem\"></item-detail>-->"
+module.exports = "<h3 class=\"item-list-title\">\r\n    {{title}}\r\n</h3>\r\n<ul class=\"items\">\r\n    <li *ngFor=\"let item of items\"\r\n        [class.selected]=\"item === selectedItem\"\r\n        (click)=\"onSelect(item)\">\r\n        <div class=\"title\">{{item.Title}}</div>\r\n        <div class=\"description\">{{item.Description}}</div>\r\n    </li>\r\n</ul>"
 
 /***/ }),
 
