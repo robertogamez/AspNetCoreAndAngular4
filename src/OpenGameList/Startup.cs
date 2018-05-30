@@ -13,6 +13,8 @@ using OpenGameList.ViewModels;
 using OpenGameList.Data.Items;
 using OpenGameList.Data.Users;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
+using OpenGameList.Infrastructure;
+using Microsoft.IdentityModel.Tokens;
 
 namespace OpenGameList
 {
@@ -80,6 +82,24 @@ namespace OpenGameList
 
             app.UseDefaultFiles();
             app.UseStaticFiles();
+
+            // Add a cutom JWT provide to generate tokens
+            app.UseJwtProvider();
+            // Add the JWT Bearer Header Authentication to validate Tokens
+            app.UseJwtBearerAuthentication(new JwtBearerOptions()
+            {
+                AutomaticAuthenticate = true,
+                AutomaticChallenge = false,
+                RequireHttpsMetadata = false,
+                TokenValidationParameters = new TokenValidationParameters
+                {
+                    IssuerSigningKey = JwtProvider.SecurityKey,
+                    ValidateIssuerSigningKey = true,
+                    ValidIssuer = JwtProvider.Issuer,
+                    ValidateIssuer = false,
+                    ValidateAudience = false
+                }
+            });
 
             app.UseMvc(routes =>
             {

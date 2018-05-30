@@ -9,6 +9,9 @@ using OpenGameList.Data.Users;
 using Microsoft.AspNetCore.Identity;
 using OpenGameList.Data;
 using System.Text;
+using System.Security.Claims;
+using System.IdentityModel.Tokens.Jwt;
+using Newtonsoft.Json;
 
 namespace OpenGameList.Infrastructure
 {
@@ -80,8 +83,76 @@ namespace OpenGameList.Infrastructure
             }
         }
         #endregion
+
+        #region Private methods
+        private async Task CreateToken(HttpContext httpContext)
+        {
+            try
+            {
+                // Retrieve the relevant FORM data
+                string username = httpContext.Request.Form["username"];
+                string password = httpContext.Request.Form["password"];
+
+                // check if there's an user with the given username
+                var user = await UserManager.FindByNameAsync(username);
+                // Fallback to support email address instead of username
+                if(user == null && username.Contains("@"))
+                {
+                    user = await UserManager.FindByEmailAsync(username);
+                }
+
+                var success = user != null && await UserManager.CheckPasswordAsync(user, password);
+
+                if (success)
+                {
+                    DateTime now = DateTime.Now;
+
+                    // add the registered claims for JWT
+                    // For more info, see https:tools.ietf.org/html/rfc7519#section-4.1
+                    var claims = new[]
+                    {
+                        new Claim(JwtRegisteredClaimNames.Iss, Issuer),
+                        new Claim(JwtRegisteredClaimNames.Sub, user.Id),
+                        new Claim(JwtRegisteredClaimNames.Jti, Guid.NewGuid().ToString()),
+                        new Claim(JwtRegisteredClaimNames.Iat, new DateTimeOffset(now).ToUnixTimeSeconds().ToString(), ClaimValueTypes.Integer64)
+                    };
+
+                    // Create the JWT and write it to string
+                    var token = new JwtSecurityToken(
+                        claims: claims,
+                        notBefore: now,
+                        expires: now.Add(TokenExpiration),
+                        signingCredentials: SigningCredentials
+                    );
+
+                    var encodedToken = new JwtSecurityTokenHandler().WriteToken(token);
+
+                    // build the json response
+                    var jwt = new
+                    {
+                        access_token = encodedToken,
+                        expiration = (int)TokenExpiration.TotalSeconds
+                    };
+
+                    // Return the token
+                    httpContext.Response.ContentType = "appication/json";
+                    await httpContext.Response.WriteAsync(JsonConvert.SerializeObject(jwt));
+                    return;
+                }
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+
+            httpContext.Response.StatusCode = 400;
+            await httpContext.Response.WriteAsync("Invalid username or password");
+        }
+        #endregion
     }
 
+
+    #region Extension Methods
     // Extension method used to add the middleware to the HTTP request pipeline.
     public static class JwtProviderExtensions
     {
@@ -90,4 +161,5 @@ namespace OpenGameList.Infrastructure
             return builder.UseMiddleware<JwtProvider>();
         }
     }
+    #endregion
 }
