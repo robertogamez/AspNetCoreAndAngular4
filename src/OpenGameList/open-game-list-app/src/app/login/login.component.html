@@ -3,13 +3,18 @@
     <div class="alert alert-danger" role="alert" *ngIf="loginError">
         <strong>Warning</strong> Username or Password mismatch
     </div>
-    <form class="form-login" [formGroup]="loginForm" (submit)="performLogin($event)">
-        <input [formControl]="loginForm.controls['username']" type="text" class="form-control"
+    <form class="form-login" [formGroup]="loginForm" (ngSubmit)="performLogin()">
+        <input [formControl]="username" type="text" class="form-control"
                placeholder="Your username or email address"
-               required
                autofocus />
-        <input [formControl]="loginForm.controls['password']" type="password" class="form-control"
-               placeholder="Your password" required />
+        <!--<div *ngIf="!username.valid" class="error message">
+            Username is invalid.
+        </div>
+        <div *ngIf="username.hasError('required')" class="error message">
+            Username is required.
+        </div>-->
+        <input [formControl]="password" type="password" class="form-control"
+               placeholder="Your password" />
         <div class="checkbox">
             <label>
                 <input type="checkbox" value="remember-me" />

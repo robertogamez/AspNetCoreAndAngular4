@@ -8,7 +8,6 @@ import 'rxjs/RX';
 
 import { AppComponent } from './app.component';
 import { ItemListComponent } from './item-list/item-list.component';
-import { ItemService } from './item.service';
 import { ItemDetailEditComponent } from './item-detail-edit/item-detail-edit.component';
 import { ItemDetailViewComponent } from './item-detail-view/item-detail-view.component';
 import { AboutComponent } from './about/about.component';
@@ -19,6 +18,9 @@ import { HomeComponent } from './home/home.component';
 // Route
 import { AppRouting } from './route/route.module';
 
+// Services
+import { ItemService } from './item.service';
+import { AuthService } from './auth/auth.service';
 
 @NgModule({
     declarations: [
@@ -42,6 +44,7 @@ import { AppRouting } from './route/route.module';
     ],
     providers: [
         ItemService,
+        AuthService,
         { provide: LocationStrategy, useClass: HashLocationStrategy }
     ],
     bootstrap: [AppComponent]

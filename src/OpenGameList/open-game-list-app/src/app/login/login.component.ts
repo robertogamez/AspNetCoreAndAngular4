@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { FormBuilder, FormGroup, Validators, AbstractControl } from '@angular/forms';
 import { Router } from '@angular/router';
 
 @Component({
@@ -10,20 +10,29 @@ import { Router } from '@angular/router';
 export class LoginComponent implements OnInit {
 
     title: string = "Login";
-    loginForm = null;
+    loginForm: FormGroup;
+    username: AbstractControl;
+    password: AbstractControl;
 
     constructor(
         private fb: FormBuilder,
-        private router: Router) {
+        private router: Router
+    ) {
+
         this.loginForm = fb.group({
-            username: ['', Validators.required],
-            password: ['', Validators.required]
+            'username': ['', Validators.required],
+            'password': ['', Validators.required]
         });
+
+        this.username = this.loginForm.controls['username'];
+        this.password = this.loginForm.controls['password'];
     }
 
-    performLogin(e) {
-        e.preventDefault();
-        alert(JSON.stringify(this.loginForm.value));
+    performLogin() {
+        //e.preventDefault();
+        if (this.loginForm.valid) {
+            alert(JSON.stringify(this.loginForm.value));
+        }
     }
 
     ngOnInit() {
