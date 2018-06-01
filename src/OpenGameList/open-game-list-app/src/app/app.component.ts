@@ -11,6 +11,8 @@ import {
     Router
 } from '@angular/router';
 
+import { AuthService } from './auth/auth.service';
+
 @Component({
     selector: 'opengamelist',
     templateUrl: './app.component.html',
@@ -20,7 +22,10 @@ export class AppComponent implements OnInit {
 
     title: string = "OpenGameList";
 
-    constructor(public router: Router) {
+    constructor(
+        public router: Router,
+        public authService: AuthService
+    ) {
     }
 
     ngOnInit() {
@@ -31,4 +36,13 @@ export class AppComponent implements OnInit {
             .router
             .isActive(this.router.createUrlTree(data), true);
     }
+
+    logout(): boolean {
+        if (this.authService.logout()) {
+            this.router.navigate(['']);
+        }
+
+        return false;
+    }
+
 }

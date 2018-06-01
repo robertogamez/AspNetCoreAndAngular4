@@ -21,6 +21,7 @@ import { AppRouting } from './route/route.module';
 // Services
 import { ItemService } from './item.service';
 import { AuthService } from './auth/auth.service';
+import { AuthHttp } from './auth/auth.http';
 
 @NgModule({
     declarations: [
@@ -45,6 +46,7 @@ import { AuthService } from './auth/auth.service';
     providers: [
         ItemService,
         AuthService,
+        AuthHttp,
         { provide: LocationStrategy, useClass: HashLocationStrategy }
     ],
     bootstrap: [AppComponent]

@@ -9,11 +9,12 @@ import { Observable } from 'rxjs/Observable';
 import 'rxjs/add/operator/map';
 import 'rxjs/add/operator/catch';
 import { Item } from './item';
+import { AuthHttp } from './auth/auth.http';
 
 @Injectable()
 export class ItemService {
 
-    constructor(private http: Http) { }
+    constructor(private http: AuthHttp) { }
 
     private baseUrl = "api/items/"; // Web api URL
 
