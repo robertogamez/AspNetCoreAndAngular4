@@ -8,22 +8,30 @@ using Newtonsoft.Json;
 using OpenGameList.Data;
 using Nelibur.ObjectMapper;
 using OpenGameList.Data.Items;
+using Microsoft.AspNetCore.Authorization;
+using System.Security.Claims;
+using Microsoft.AspNetCore.Identity;
+using OpenGameList.Data.Users;
 
 // For more information on enabling Web API for empty projects, visit http://go.microsoft.com/fwlink/?LinkID=397860
 
 namespace OpenGameList.Controllers
 {
     [Route("api/[controller]")]
-    public class ItemsController : Controller
+    public class ItemsController : BaseController
     {
         #region Private fields
-        private ApplicationDbContext DbContext;
+        
         #endregion
 
         #region Constructor
-        public ItemsController(ApplicationDbContext context)
+        public ItemsController(
+            ApplicationDbContext context,
+            SignInManager<ApplicationUser> signInManager,
+            UserManager<ApplicationUser> usermanager
+        ) : base(context, signInManager, usermanager)
         {
-            DbContext = context;
+            
         }
         #endregion
 
@@ -144,6 +152,7 @@ namespace OpenGameList.Controllers
         /// <param name="ivm"></param>
         /// <returns></returns>
         [HttpPost()]
+        [Authorize]
         public IActionResult Add([FromBody]ItemViewModel ivm)
         {
             if(ivm != null)
@@ -155,7 +164,8 @@ namespace OpenGameList.Controllers
                 item.CreatedDate = item.LastModifiedDate = DateTime.Now;
 
                 // Replace the following with the current user's id
-                item.UserId = DbContext.Users.Where(u => u.UserName == "Admin").FirstOrDefault().Id;
+                //item.UserId = DbContext.Users.Where(u => u.UserName == "Admin").FirstOrDefault().Id;
+                item.UserId = GetCurrentUserId();
 
                 // Add the new Item
                 DbContext.Items.Add(item);
@@ -169,6 +179,11 @@ namespace OpenGameList.Controllers
             return new StatusCodeResult(500);
         }
 
+        private bool ClaimsType(Claim obj)
+        {
+            throw new NotImplementedException();
+        }
+
         /// <summary>
         /// PUT: api/items/{id}
         /// </summary>
@@ -176,6 +191,7 @@ namespace OpenGameList.Controllers
         /// <param name="ivm"></param>
         /// <returns></returns>
         [HttpPut("{id}")]
+        [Authorize]
         public IActionResult Update(int id, [FromBody]ItemViewModel ivm)
         {
             if(ivm != null)
@@ -212,6 +228,7 @@ namespace OpenGameList.Controllers
         /// <param name="id"></param>
         /// <returns></returns>
         [HttpDelete("{id}")]
+        [Authorize]
         public IActionResult Delete(int id)
         {
             var item = DbContext.Items.Where(i => i.Id == id).FirstOrDefault();
@@ -246,42 +263,6 @@ namespace OpenGameList.Controllers
             }
 
             return lst;
-        }
-
-        /// <summary>
-        /// Generate a sample array of source Items to emulate a database
-        /// </summary>
-        /// <param name="num"></param>
-        /// <returns></returns>
-        private List<ItemViewModel> GetSampleItems(int num = 999)
-        {
-            List<ItemViewModel> lst = new List<ItemViewModel>();
-            DateTime date = new DateTime(2015, 12, 31).AddDays(-num);
-
-            for (int id = 1; id <= num; id++)
-            {
-                lst.Add(new ItemViewModel
-                {
-                    Id = id,
-                    Title = string.Format("Item {0} Title", id),
-                    Description = string.Format("This is a sample description for item {0}", id),
-                    CreatedDate = date.AddDays(id),
-                    ViewCount = num - id
-                });
-            }
-
-            return lst;
-        }
-
-        private JsonSerializerSettings DefaultJsonSettings
-        {
-            get
-            {
-                return new JsonSerializerSettings
-                {
-                    Formatting = Formatting.Indented
-                };
-            }
         }
 
         private int DefaultNumberOfItems

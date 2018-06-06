@@ -22,6 +22,10 @@ export class LoginComponent implements OnInit {
         private authService: AuthService
     ) {
 
+        if (this.authService.isLoggedIn()) {
+            this.router.navigate(['']);
+        }
+
         this.loginForm = fb.group({
             'username': ['', Validators.required],
             'password': ['', Validators.required]

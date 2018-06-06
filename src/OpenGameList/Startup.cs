@@ -101,6 +101,8 @@ namespace OpenGameList
                 }
             });
 
+            app.UseIdentity();
+
             app.UseMvc(routes =>
             {
                 // Routes sample A
