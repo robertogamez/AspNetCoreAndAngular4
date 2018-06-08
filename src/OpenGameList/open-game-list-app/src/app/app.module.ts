@@ -22,7 +22,7 @@ import { AppRouting } from './route/route.module';
 import { ItemService } from './item.service';
 import { AuthService } from './auth/auth.service';
 import { AuthHttp } from './auth/auth.http';
-import { UserEditComponent } from './user/user-edit/user-edit.component';
+import { UserEditComponent } from './user-edit/user-edit.component';
 
 @NgModule({
     declarations: [

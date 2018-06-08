@@ -7,6 +7,7 @@ import { LoginComponent } from '../login/login.component';
 import { PageNotFoundComponent } from '../page-not-found/page-not-found.component';
 import { ItemDetailEditComponent } from '../item-detail-edit/item-detail-edit.component';
 import { ItemDetailViewComponent } from '../item-detail-view/item-detail-view.component';
+import { UserEditComponent } from '../user-edit/user-edit.component';
 
 const appRoutes: Routes = [
     {
@@ -35,6 +36,10 @@ const appRoutes: Routes = [
     {
         path: "**",
         component: PageNotFoundComponent
+    },
+    {
+        path: 'register',
+        component: UserEditComponent
     }
 ];
 
