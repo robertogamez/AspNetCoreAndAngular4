@@ -24,10 +24,10 @@
                     <a class="about" 
                        [routerLink]="['about']">About</a>
                 </li>
-                <li [class.active]="isActive(['login'])"
+                <li [class.active]="isActive(['login']) || isActive(['register'])"
                     *ngIf="!authService.isLoggedIn()">
                     <a class="login" 
-                       [routerLink]="['login']">Login</a>
+                       [routerLink]="['login']">Login / Register</a>
                 </li>
                 <li *ngIf="authService.isLoggedIn()">
                     <a class="logout" href="javascript:void(0)"

@@ -34,12 +34,16 @@ const appRoutes: Routes = [
         component: ItemDetailViewComponent
     },
     {
-        path: "**",
-        component: PageNotFoundComponent
-    },
-    {
         path: 'register',
         component: UserEditComponent
+    },
+    {
+        path: 'account',
+        component: UserEditComponent
+    },
+    {
+        path: "**",
+        component: PageNotFoundComponent
     }
 ];
 

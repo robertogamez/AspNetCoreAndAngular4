@@ -1,32 +1,31 @@
 <div class="user-container">
-    <form class="form-user" [formGroup]="userForm"
-          (ngSubmit)="onSubmit()">
+    <form class="form-user" [formGroup]="userForm" (ngSubmit)="onSubmit()">
 
         <h2 class="form-user-heading">
             {{title}}
         </h2>
         <!--Username-->
         <div class="form-group">
-            <input [formControl]="username" type="text"
+            <input [formControl]="userForm.controls.username" type="text"
                    class="form-control"
                    placeholder="Choose an Username"
                    autofocus />
             <span class="validator-label valid"
-                  *ngIf="this.userForm.controls.username.valid">
+                  *ngIf="userForm.controls.username.valid">
                 <span class="glyphicon glyphicon-ok" aria-hidden="true"></span> valid!
             </span>
             <span class="validator-label invalid"
-                  *ngIf="!this.userForm.controls.username.valid && !this.userForm.controls.username.pristine">
+                  *ngIf="!userForm.controls.username.valid && !userForm.controls.username.pristine">
                 <span class="glyphicon glyphicon-remove" ariahidden="true"></span> invalid
             </span>
         </div>
         <!--Email-->
         <div class="form-group">
-            <input [formControl]="email" type="text"
+            <input [formControl]="userForm.controls.email" type="text"
                    class="form-control"
                    placeholder="Type your e-mail address" />
             <span class="validator-label valid"
-                  *ngIf="this.userForm.controls.email.valid">
+                  *ngIf="userForm.controls.email.valid">
                 <span class="glyphicon glyphicon-ok" aria-hidden="true"></span> valid!
             </span>
             <span class="validator-label invalid"
@@ -34,48 +33,63 @@
                 <span class="glyphicon glyphicon-remove" ariahidden="true"></span> invalid
             </span>
         </div>
-        <!--Email-->
+        <!--Password current-->
+        <div class="form-group" *ngIf="!this.isRegister">
+            <input [formControl]="userForm.controls.passwordCurrent" type="password"
+                   class="form-control"
+                   placeholder="Current Password" />
+            <span class="validator-label invalid"
+                  *ngIf="!userForm.controls.passwordCurrent.valid">
+                <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+                required
+            </span>
+        </div>
+        <!--Password-->
         <div class="form-group">
-            <input [formControl]="password" type="password"
+
+            <input [formControl]="userForm.controls.password" type="password"
                    class="form-control"
                    placeholder="Choose a Password" />
             <span class="validator-label valid"
-                  *ngIf="this.userForm.controls.password.valid">
+                  *ngIf="userForm.controls.password.valid">
                 <span class="glyphicon glyphicon-ok" aria-hidden="true"></span> valid!
             </span>
             <span class="validator-label invalid"
-                  *ngIf="!this.userForm.controls.password.valid && !this.userForm.controls.password.pristine">
+                  *ngIf="!userForm.controls.password.valid && !userForm.controls.password.pristine">
                 <span class="glyphicon glyphicon-remove" ariahidden="true"></span> invalid
             </span>
         </div>
         <!--Password confirm-->
         <div class="form-group">
-            <input [formControl]="passwordConfirm" type="password"
+            <input [formControl]="userForm.controls.passwordConfirm" 
+                   type="password"
                    class="form-control"
-                   placeholder="Confirm your Password" />
+                   placeholder="Confirm your Password"
+                   [disabled]="!isRegister" />
             <span class="validator-label valid"
-                  *ngIf="this.userForm.controls.passwordConfirm.valid
-                         && !this.userForm.controls.password.pristine 
-                         && !this.userForm.hasError('compareField')">
+                  *ngIf="userForm.controls.passwordConfirm.valid
+                         && !userForm.controls.password.pristine 
+                         && !userForm.hasError('compareField')">
                 <span class="glyphicon glyphicon-ok" aria-hidden="true"></span> valid!
             </span>
             <span class="validator-label invalid"
-                  *ngIf="(!this.userForm.controls.password.valid && !this.userForm.controls.password.pristine)
-                            || this.userForm.hasError('compareField')">
+                  *ngIf="(!userForm.controls.passwordConfirm.valid && !userForm.controls.password.pristine)
+                            || userForm.hasError('compareField')">
                 <span class="glyphicon glyphicon-remove" ariahidden="true"></span> invalid
             </span>
         </div>
         <!--Display Name-->
         <div class="form-group">
-            <input [formControl]="displayName"
+            <input [formControl]="userForm.controls.displayName"
                    type="text" class="form-control"
                    placeholder="Choose a Display Name" />
         </div>
 
         <!--Buttons-->
         <div class="form-group">
-            <input type="submit" class="btn  btn-primary btn-block" [disabled]="!userForm-valid"
-                   value="Register" />
+            <input type="submit" class="btn  btn-primary btn-block" 
+                   [disabled]="!userForm-valid"
+                   value="{{isRegister ? 'Register' : 'Save'}}" />
 
         </div>
 

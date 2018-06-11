@@ -46,7 +46,7 @@ namespace OpenGameList.Controllers
         /// </summary>
         /// <returns>A Json-serialized object representing the current account.</returns>
         [HttpGet()]
-        public async Task<IActionResult> Get()
+        public IActionResult Get()
         {
             var id = GetCurrentUserId();
 

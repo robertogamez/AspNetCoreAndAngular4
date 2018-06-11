@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators, AbstractControl } from '@angular/forms';
 import { Router } from '@angular/router';
 import { AuthService } from '../auth/auth.service';
+import { UserEditComponent } from '../user-edit/user-edit.component';
 
 @Component({
     selector: 'app-login',
@@ -60,6 +61,12 @@ export class LoginComponent implements OnInit {
     }
 
     ngOnInit() {
+    }
+
+    onRegister() {
+
+        this.router.navigate(['register']);
+
     }
 
 }
