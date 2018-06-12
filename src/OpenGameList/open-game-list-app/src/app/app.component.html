@@ -24,19 +24,26 @@
                     <a class="about" 
                        [routerLink]="['about']">About</a>
                 </li>
+                <li [class.active]="isActive(['item/edit', 0])"
+                    *ngIf="authService.isLoggedIn()"
+                    class="right">
+                    <a class="add"
+                       [routerLink]="['item/edit', 0]">Add New</a>
+                </li>
                 <li [class.active]="isActive(['login']) || isActive(['register'])"
-                    *ngIf="!authService.isLoggedIn()">
+                    *ngIf="!authService.isLoggedIn()"
+                    class="right">
                     <a class="login" 
                        [routerLink]="['login']">Login / Register</a>
                 </li>
-                <li *ngIf="authService.isLoggedIn()">
+                <li *ngIf="authService.isLoggedIn()" class="right">
                     <a class="logout" href="javascript:void(0)"
                        (click)="logout()">Logout</a>
                 </li>
-                <li [class.active]="isActive(['item/edit', 0])"
-                    *ngIf="authService.isLoggedIn()">
-                    <a class="add" 
-                       [routerLink]="['item/edit', 0]">Add</a>
+                <li *ngIf="authService.isLoggedIn()" 
+                    class="right"
+                    [class.active]="isActive(['account'])">
+                    <a [routerLink]="['account']">Edit Acount</a>
                 </li>
             </ul>
         </div>

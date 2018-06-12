@@ -250,3 +250,13 @@ $color-panel: #f9f9f9;
         margin: 10px 0;
     }
 }
+
+@media (min-width: 768px) {
+    .nav.navbar-nav {
+        float: none;
+
+        li.right {
+            float: right;
+        }
+    }
+}
