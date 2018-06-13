@@ -27,8 +27,8 @@ var AboutComponent = (function () {
 AboutComponent = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_14" /* Component */])({
         selector: 'app-about',
-        template: __webpack_require__(320),
-        styles: [__webpack_require__(310)]
+        template: __webpack_require__(321),
+        styles: [__webpack_require__(311)]
     }),
     __metadata("design:paramtypes", [])
 ], AboutComponent);
@@ -64,8 +64,8 @@ var HomeComponent = (function () {
 HomeComponent = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_14" /* Component */])({
         selector: 'home',
-        template: __webpack_require__(322),
-        styles: [__webpack_require__(311)]
+        template: __webpack_require__(323),
+        styles: [__webpack_require__(312)]
     }),
     __metadata("design:paramtypes", [])
 ], HomeComponent);
@@ -159,8 +159,8 @@ var ItemDetailEditComponent = (function () {
 ItemDetailEditComponent = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_14" /* Component */])({
         selector: 'item-detail-edit',
-        template: __webpack_require__(323),
-        styles: [__webpack_require__(312)]
+        template: __webpack_require__(324),
+        styles: [__webpack_require__(313)]
     }),
     __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_3__item_service__["a" /* ItemService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_3__item_service__["a" /* ItemService */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_1__angular_router__["b" /* Router */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__angular_router__["b" /* Router */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_1__angular_router__["c" /* ActivatedRoute */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__angular_router__["c" /* ActivatedRoute */]) === "function" && _c || Object, typeof (_d = typeof __WEBPACK_IMPORTED_MODULE_4__auth_auth_service__["a" /* AuthService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_4__auth_auth_service__["a" /* AuthService */]) === "function" && _d || Object])
 ], ItemDetailEditComponent);
@@ -226,8 +226,8 @@ var ItemDetailViewComponent = (function () {
 ItemDetailViewComponent = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_14" /* Component */])({
         selector: 'app-item-detail-view',
-        template: __webpack_require__(324),
-        styles: [__webpack_require__(313)]
+        template: __webpack_require__(325),
+        styles: [__webpack_require__(314)]
     }),
     __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_3__auth_auth_service__["a" /* AuthService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_3__auth_auth_service__["a" /* AuthService */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_2__item_service__["a" /* ItemService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__item_service__["a" /* ItemService */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_1__angular_router__["b" /* Router */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__angular_router__["b" /* Router */]) === "function" && _c || Object, typeof (_d = typeof __WEBPACK_IMPORTED_MODULE_1__angular_router__["c" /* ActivatedRoute */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__angular_router__["c" /* ActivatedRoute */]) === "function" && _d || Object])
 ], ItemDetailViewComponent);
@@ -307,10 +307,10 @@ var LoginComponent = (function () {
 LoginComponent = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_14" /* Component */])({
         selector: 'app-login',
-        template: __webpack_require__(326),
-        styles: [__webpack_require__(315)]
+        template: __webpack_require__(327),
+        styles: [__webpack_require__(316)]
     }),
-    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__angular_forms__["d" /* FormBuilder */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__angular_forms__["d" /* FormBuilder */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_2__angular_router__["b" /* Router */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__angular_router__["b" /* Router */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_3__auth_auth_service__["a" /* AuthService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_3__auth_auth_service__["a" /* AuthService */]) === "function" && _c || Object])
+    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__angular_forms__["e" /* FormBuilder */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__angular_forms__["e" /* FormBuilder */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_2__angular_router__["b" /* Router */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__angular_router__["b" /* Router */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_3__auth_auth_service__["a" /* AuthService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_3__auth_auth_service__["a" /* AuthService */]) === "function" && _c || Object])
 ], LoginComponent);
 
 var _a, _b, _c;
@@ -345,8 +345,8 @@ var PageNotFoundComponent = (function () {
 PageNotFoundComponent = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_14" /* Component */])({
         selector: 'app-page-not-found',
-        template: __webpack_require__(327),
-        styles: [__webpack_require__(316)]
+        template: __webpack_require__(328),
+        styles: [__webpack_require__(317)]
     }),
     __metadata("design:paramtypes", [])
 ], PageNotFoundComponent);
@@ -363,6 +363,7 @@ PageNotFoundComponent = __decorate([
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_forms__ = __webpack_require__(71);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_router__ = __webpack_require__(22);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__auth_auth_service__ = __webpack_require__(30);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__user_user__ = __webpack_require__(255);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return UserEditComponent; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -377,16 +378,26 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 
 
+
 var UserEditComponent = (function () {
-    function UserEditComponent(fb, router, authService) {
+    function UserEditComponent(fb, router, authService, activatedRoute) {
         this.fb = fb;
         this.router = router;
         this.authService = authService;
-        if (this.authService.isLoggedIn()) {
+        this.activatedRoute = activatedRoute;
+        this.title = "New User Registration";
+        // Determine behavior by fetching the active route
+        this.isRegister = (activatedRoute.snapshot.url.toString() === 'register');
+        if ((this.isRegister && this.authService.isLoggedIn())
+            || (!this.isRegister && !this.authService.isLoggedIn())) {
             this.router.navigate(['']);
+        }
+        if (!this.isRegister) {
+            this.title = 'Edit account';
         }
     }
     UserEditComponent.prototype.ngOnInit = function () {
+        var _this = this;
         this.userForm = this.fb.group({
             'username': ['', [__WEBPACK_IMPORTED_MODULE_1__angular_forms__["c" /* Validators */].required, __WEBPACK_IMPORTED_MODULE_1__angular_forms__["c" /* Validators */].pattern('[a-zA-Z0-9]+')]],
             'email': ['', [__WEBPACK_IMPORTED_MODULE_1__angular_forms__["c" /* Validators */].required, __WEBPACK_IMPORTED_MODULE_1__angular_forms__["c" /* Validators */].pattern("^[_a-z0-9-]+(\.[_a-z0-9-]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,3})$")]],
@@ -396,6 +407,23 @@ var UserEditComponent = (function () {
         }, {
             validator: this.compareValidator('password', 'passwordConfirm')
         });
+        if (!this.isRegister) {
+            this.userForm.addControl('passwordCurrent', new __WEBPACK_IMPORTED_MODULE_1__angular_forms__["d" /* FormControl */]('', __WEBPACK_IMPORTED_MODULE_1__angular_forms__["c" /* Validators */].required));
+            var password = this.userForm.get('password');
+            password.clearValidators();
+            password.setValidators(__WEBPACK_IMPORTED_MODULE_1__angular_forms__["c" /* Validators */].minLength(6));
+            var passwordConfirm = this.userForm.get("passwordConfirm");
+            passwordConfirm.clearValidators();
+            passwordConfirm.setValidators(__WEBPACK_IMPORTED_MODULE_1__angular_forms__["c" /* Validators */].minLength(6));
+            this.authService.get().subscribe(function (user) {
+                _this.userForm.get("username")
+                    .setValue(user.UserName);
+                _this.userForm.get("email")
+                    .setValue(user.Email);
+                _this.userForm.get("displayName")
+                    .setValue(user.DisplayName);
+            });
+        }
     };
     UserEditComponent.prototype.compareValidator = function (fc1, fc2) {
         return function (group) {
@@ -411,43 +439,62 @@ var UserEditComponent = (function () {
     };
     UserEditComponent.prototype.onSubmit = function () {
         var _this = this;
-        this.authService.add(this.userForm.value)
-            .subscribe(function (data) {
-            if (data.error == null) {
-                // registration successful
-                _this.errorMessage = null;
-                _this.authService.login(_this.userForm.value.username, _this.userForm.value.password)
-                    .subscribe(function (data) {
-                    // login successful
+        if (this.isRegister) {
+            this.authService.add(this.userForm.value)
+                .subscribe(function (data) {
+                if (data.error == null) {
+                    // registration successful
+                    _this.errorMessage = null;
+                    _this.authService.login(_this.userForm.value.username, _this.userForm.value.password)
+                        .subscribe(function (data) {
+                        // login successful
+                        _this.errorMessage = null;
+                        _this.router.navigate(['']);
+                    }, function (err) {
+                        console.log(err);
+                        // login failure
+                        _this.errorMessage = "Warning: Username or Password mismatch";
+                    });
+                }
+                else {
+                    // registration failure
+                    _this.errorMessage = data.error;
+                }
+            }, function (err) {
+                // server/connection error
+                _this.errorMessage = err;
+            });
+        }
+        else {
+            var user = new __WEBPACK_IMPORTED_MODULE_4__user_user__["a" /* User */](this.userForm.value.username, this.userForm.value.password, this.userForm.value.passwordNew, this.userForm.value.email, this.userForm.value.displayName);
+            this.authService.update(user)
+                .subscribe(function (data) {
+                if (data.error == null) {
+                    // update successful
                     _this.errorMessage = null;
                     _this.router.navigate(['']);
-                }, function (err) {
-                    console.log(err);
-                    // login failure
-                    _this.errorMessage = "Warning: Username or Password mismatch";
-                });
-            }
-            else {
-                // registration failure
-                _this.errorMessage = data.error;
-            }
-        }, function (err) {
-            // server/connection error
-            _this.errorMessage = err;
-        });
+                }
+                else {
+                    _this.errorMessage = data.error;
+                }
+            }, function (err) {
+                // server/connection error
+                _this.errorMessage = err;
+            });
+        }
     };
     return UserEditComponent;
 }());
 UserEditComponent = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_14" /* Component */])({
         selector: 'app-user-edit',
-        template: __webpack_require__(328),
-        styles: [__webpack_require__(317)]
+        template: __webpack_require__(329),
+        styles: [__webpack_require__(318)]
     }),
-    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__angular_forms__["d" /* FormBuilder */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__angular_forms__["d" /* FormBuilder */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_2__angular_router__["b" /* Router */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__angular_router__["b" /* Router */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_3__auth_auth_service__["a" /* AuthService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_3__auth_auth_service__["a" /* AuthService */]) === "function" && _c || Object])
+    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__angular_forms__["e" /* FormBuilder */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__angular_forms__["e" /* FormBuilder */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_2__angular_router__["b" /* Router */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__angular_router__["b" /* Router */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_3__auth_auth_service__["a" /* AuthService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_3__auth_auth_service__["a" /* AuthService */]) === "function" && _c || Object, typeof (_d = typeof __WEBPACK_IMPORTED_MODULE_2__angular_router__["c" /* ActivatedRoute */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__angular_router__["c" /* ActivatedRoute */]) === "function" && _d || Object])
 ], UserEditComponent);
 
-var _a, _b, _c;
+var _a, _b, _c, _d;
 //# sourceMappingURL=user-edit.component.js.map
 
 /***/ }),
@@ -474,7 +521,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(6);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_platform_browser_dynamic__ = __webpack_require__(249);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__app_app_module__ = __webpack_require__(251);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__environments_environment__ = __webpack_require__(255);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__environments_environment__ = __webpack_require__(256);
 
 
 
@@ -534,8 +581,8 @@ var AppComponent = (function () {
 AppComponent = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_14" /* Component */])({
         selector: 'opengamelist',
-        template: __webpack_require__(321),
-        styles: [__webpack_require__(318)]
+        template: __webpack_require__(322),
+        styles: [__webpack_require__(319)]
     }),
     __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__angular_router__["b" /* Router */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__angular_router__["b" /* Router */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_2__auth_auth_service__["a" /* AuthService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__auth_auth_service__["a" /* AuthService */]) === "function" && _b || Object])
 ], AppComponent);
@@ -555,7 +602,7 @@ var _a, _b;
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_http__ = __webpack_require__(51);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__angular_router__ = __webpack_require__(22);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__angular_common__ = __webpack_require__(50);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_rxjs_RX__ = __webpack_require__(330);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_rxjs_RX__ = __webpack_require__(331);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_rxjs_RX___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_6_rxjs_RX__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__app_component__ = __webpack_require__(250);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__item_list_item_list_component__ = __webpack_require__(252);
@@ -708,8 +755,8 @@ __decorate([
 ItemListComponent = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_14" /* Component */])({
         selector: 'item-list',
-        template: __webpack_require__(325),
-        styles: [__webpack_require__(314)]
+        template: __webpack_require__(326),
+        styles: [__webpack_require__(315)]
     }),
     __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_2__item_service__["a" /* ItemService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__item_service__["a" /* ItemService */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_1__angular_router__["b" /* Router */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__angular_router__["b" /* Router */]) === "function" && _b || Object])
 ], ItemListComponent);
@@ -788,6 +835,10 @@ var appRoutes = [
         component: __WEBPACK_IMPORTED_MODULE_7__user_edit_user_edit_component__["a" /* UserEditComponent */]
     },
     {
+        path: 'account',
+        component: __WEBPACK_IMPORTED_MODULE_7__user_edit_user_edit_component__["a" /* UserEditComponent */]
+    },
+    {
         path: "**",
         component: __WEBPACK_IMPORTED_MODULE_4__page_not_found_page_not_found_component__["a" /* PageNotFoundComponent */]
     }
@@ -799,6 +850,26 @@ var AppRouting = __WEBPACK_IMPORTED_MODULE_0__angular_router__["a" /* RouterModu
 /***/ }),
 
 /***/ 255:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return User; });
+var User = (function () {
+    function User(UserName, Password, PasswordNew, Email, DisplayName) {
+        this.UserName = UserName;
+        this.Password = Password;
+        this.PasswordNew = PasswordNew;
+        this.Email = Email;
+        this.DisplayName = DisplayName;
+    }
+    return User;
+}());
+
+//# sourceMappingURL=user.js.map
+
+/***/ }),
+
+/***/ 256:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -939,24 +1010,6 @@ AuthService = __decorate([
 
 var _a;
 //# sourceMappingURL=auth.service.js.map
-
-/***/ }),
-
-/***/ 310:
-/***/ (function(module, exports, __webpack_require__) {
-
-exports = module.exports = __webpack_require__(14)();
-// imports
-
-
-// module
-exports.push([module.i, "", ""]);
-
-// exports
-
-
-/*** EXPORTS FROM exports-loader ***/
-module.exports = module.exports.toString();
 
 /***/ }),
 
@@ -1104,66 +1157,84 @@ module.exports = module.exports.toString();
 
 /***/ }),
 
-/***/ 320:
-/***/ (function(module, exports) {
+/***/ 319:
+/***/ (function(module, exports, __webpack_require__) {
 
-module.exports = "<h2>{{title}}</h2>\r\n<div>\r\n    OpenGameList: a production-ready, fully-featured SPA sample powered by ASP.NET Core Web API and Angular 4\r\n</div>"
+exports = module.exports = __webpack_require__(14)();
+// imports
+
+
+// module
+exports.push([module.i, "", ""]);
+
+// exports
+
+
+/*** EXPORTS FROM exports-loader ***/
+module.exports = module.exports.toString();
 
 /***/ }),
 
 /***/ 321:
 /***/ (function(module, exports) {
 
-module.exports = "<nav class=\"navbar navbar-inverse navbar-fixed-top\">\r\n    <div class=\"container-fluid\">\r\n        <input type=\"checkbox\" id=\"navbar-toggle-cbox\" />\r\n        <div class=\"navbar-header\">\r\n            <label for=\"navbar-toggle-cbox\" class=\"navbar-toggle collapsed\"\r\n                   data-toggle=\"collapse\" data-target=\"#navbar\" aria-expanded=\"false\"\r\n                   aria-controls=\"navbar\">\r\n                <span class=\"sr-only\">Toggle navigation</span>\r\n                <span class=\"icon-bar\"></span>\r\n                <span class=\"icon-bar\"></span>\r\n                <span class=\"icon-bar\"></span>\r\n            </label>\r\n            <a class=\"navbar-brand\" href=\"#\">\r\n                <img alt=\"logo\" src=\"../assets/img/logo.svg\" />\r\n            </a>\r\n        </div>\r\n        <div class=\"collapse navbar-collapse\" id=\"navbar\">\r\n            <ul class=\"nav navbar-nav\">\r\n                <li [class.active]=\"isActive([''])\">\r\n                    <a class=\"home\"  \r\n                       [routerLink]=\"['']\">Home</a>\r\n                </li>\r\n                <li [class.active]=\"isActive(['about'])\">\r\n                    <a class=\"about\" \r\n                       [routerLink]=\"['about']\">About</a>\r\n                </li>\r\n                <li [class.active]=\"isActive(['login']) || isActive(['register'])\"\r\n                    *ngIf=\"!authService.isLoggedIn()\">\r\n                    <a class=\"login\" \r\n                       [routerLink]=\"['login']\">Login / Register</a>\r\n                </li>\r\n                <li *ngIf=\"authService.isLoggedIn()\">\r\n                    <a class=\"logout\" href=\"javascript:void(0)\"\r\n                       (click)=\"logout()\">Logout</a>\r\n                </li>\r\n                <li [class.active]=\"isActive(['item/edit', 0])\"\r\n                    *ngIf=\"authService.isLoggedIn()\">\r\n                    <a class=\"add\" \r\n                       [routerLink]=\"['item/edit', 0]\">Add</a>\r\n                </li>\r\n            </ul>\r\n        </div>\r\n    </div>\r\n</nav>\r\n<h1 class=\"header\">{{title}}</h1>\r\n<div class=\"main-container\">\r\n    <router-outlet></router-outlet>\r\n</div>"
+module.exports = "<h2>{{title}}</h2>\r\n<div>\r\n    OpenGameList: a production-ready, fully-featured SPA sample powered by ASP.NET Core Web API and Angular 4\r\n</div>"
 
 /***/ }),
 
 /***/ 322:
 /***/ (function(module, exports) {
 
-module.exports = "<h2>\r\n    A non-comprehensive directory of open-source video games\r\n    available on the web\r\n</h2>\r\n<div class=\"row\">\r\n    <div class=\"col-md-4\">\r\n        <item-list class=\"latest\"></item-list>\r\n    </div>\r\n    <div class=\"col-md-4\">\r\n        <item-list class=\"most-viewed\"></item-list>\r\n    </div>\r\n    <div class=\"col-md-4\">\r\n        <item-list class=\"random\"></item-list>\r\n    </div>\r\n</div>\r\n\r\n\r\n"
+module.exports = "<nav class=\"navbar navbar-inverse navbar-fixed-top\">\r\n    <div class=\"container-fluid\">\r\n        <input type=\"checkbox\" id=\"navbar-toggle-cbox\" />\r\n        <div class=\"navbar-header\">\r\n            <label for=\"navbar-toggle-cbox\" class=\"navbar-toggle collapsed\"\r\n                   data-toggle=\"collapse\" data-target=\"#navbar\" aria-expanded=\"false\"\r\n                   aria-controls=\"navbar\">\r\n                <span class=\"sr-only\">Toggle navigation</span>\r\n                <span class=\"icon-bar\"></span>\r\n                <span class=\"icon-bar\"></span>\r\n                <span class=\"icon-bar\"></span>\r\n            </label>\r\n            <a class=\"navbar-brand\" href=\"#\">\r\n                <img alt=\"logo\" src=\"../assets/img/logo.svg\" />\r\n            </a>\r\n        </div>\r\n        <div class=\"collapse navbar-collapse\" id=\"navbar\">\r\n            <ul class=\"nav navbar-nav\">\r\n                <li [class.active]=\"isActive([''])\">\r\n                    <a class=\"home\"  \r\n                       [routerLink]=\"['']\">Home</a>\r\n                </li>\r\n                <li [class.active]=\"isActive(['about'])\">\r\n                    <a class=\"about\" \r\n                       [routerLink]=\"['about']\">About</a>\r\n                </li>\r\n                <li [class.active]=\"isActive(['item/edit', 0])\"\r\n                    *ngIf=\"authService.isLoggedIn()\"\r\n                    class=\"right\">\r\n                    <a class=\"add\"\r\n                       [routerLink]=\"['item/edit', 0]\">Add New</a>\r\n                </li>\r\n                <li [class.active]=\"isActive(['login']) || isActive(['register'])\"\r\n                    *ngIf=\"!authService.isLoggedIn()\"\r\n                    class=\"right\">\r\n                    <a class=\"login\" \r\n                       [routerLink]=\"['login']\">Login / Register</a>\r\n                </li>\r\n                <li *ngIf=\"authService.isLoggedIn()\" class=\"right\">\r\n                    <a class=\"logout\" href=\"javascript:void(0)\"\r\n                       (click)=\"logout()\">Logout</a>\r\n                </li>\r\n                <li *ngIf=\"authService.isLoggedIn()\" \r\n                    class=\"right\"\r\n                    [class.active]=\"isActive(['account'])\">\r\n                    <a [routerLink]=\"['account']\">Edit Acount</a>\r\n                </li>\r\n            </ul>\r\n        </div>\r\n    </div>\r\n</nav>\r\n<h1 class=\"header\">{{title}}</h1>\r\n<div class=\"main-container\">\r\n    <router-outlet></router-outlet>\r\n</div>"
 
 /***/ }),
 
 /***/ 323:
 /***/ (function(module, exports) {
 
-module.exports = "<div *ngIf=\"item\">\r\n    <h2>\r\n        <a href=\"#\" (click)=\"onBack()\">\r\n            &laquo; Back to Home\r\n        </a>\r\n    </h2>\r\n    <div class=\"item-container\">\r\n        <ul class=\"nav nav-tabs\">\r\n            <li role=\"presentation\" class=\"active\">\r\n                <a href=\"#\">Edit</a>\r\n            </li>\r\n            <li role=\"presentation\" *ngIf=\"item.Id != 0\">\r\n                <a href=\"#\" (click)=\"onItemDetailView(item)\">View</a>\r\n            </li>\r\n        </ul>\r\n        <div class=\"panel panel-default\">\r\n            <div class=\"panel-body\">\r\n               <form class=\"item-detail-edit\">\r\n                   <h3>\r\n                       {{item.Title}}\r\n                       <span class=\"empty-field\" [hidden]=\"dTitle.valid\">\r\n                           Empty Title\r\n                       </span>\r\n                   </h3>\r\n                   <div class=\"form-group has-feedback\" \r\n                        [ngClass]=\"{ 'has-success': dTitle.valid, 'has-error': !dTitle.valid }\">\r\n                       <label for=\"input-title\">Title</label>\r\n                       <input id=\"input-title\" name=\"input-title\"\r\n                              type=\"text\" class=\"form-control\"\r\n                              [(ngModel)]=\"item.Title\"\r\n                              placeholder=\"Insert the title...\"\r\n                              required #dTitle=\"ngModel\" />\r\n                       <span class=\"glyphicon form-control-feedback\" aria-hidden=\"true\"\r\n                             [ngClass]=\"{'glyphicon-ok': dTitle.valid, 'glyphicon-remove': !dTitle.valid}\"></span>\r\n                       <div [hidden]=\"dTitle.valid\" class=\"alert alert-danger\">\r\n                           You need to enter a valid Title.\r\n                       </div>\r\n                   </div>\r\n                   <div class=\"form-group\">\r\n                       <label for=\"input-description\">Description</label>\r\n                       <textarea id=\"input-description\" name=\"input-description\"\r\n                                 class=\"form-control\" [(ngModel)]=\"item.Description\"\r\n                                 placeholder=\"Insert a suitable description...\" required></textarea>\r\n                   </div>\r\n                   <div class=\"form-group\">\r\n                       <label for=\"input-text\">\r\n                           Text\r\n                       </label>\r\n                       <textarea id=\"input-text\" name=\"input-text\"\r\n                                 class=\"form-control\" [(ngModel)]=\"item.Text\"\r\n                                 placeholder=\"Insert a suitable description...\"></textarea>\r\n                   </div>\r\n                   <div *ngIf=\"item.Id == 0\" class=\"commands insert\">\r\n                       <input type=\"button\" class=\"btn btn-primary\"\r\n                              value=\"Save\" (click)=\"onInsert(item)\" />\r\n                       <input type=\"button\" class=\"btn btn-default\"\r\n                              value=\"Cancel\" (click)=\"onBack()\" />\r\n                   </div>\r\n                   <div *ngIf=\"item.Id != 0\" class=\"commands update\">\r\n                       <input type=\"button\" class=\"btn btn-primary\"\r\n                              value=\"Update\" (click)=\"onUpdate(item)\" />\r\n                       <input type=\"button\" class=\"btn btn-danger\"\r\n                              value=\"Delete\" (click)=\"onDelete(item)\" />\r\n                       <input type=\"button\" class=\"btn btn-default\"\r\n                              value=\"Cancel\" (click)=\"onItemDetailView(item)\" />\r\n                   </div>\r\n               </form>\r\n            </div>\r\n        </div>\r\n    </div>\r\n</div>"
+module.exports = "<h2>\r\n    A non-comprehensive directory of open-source video games\r\n    available on the web\r\n</h2>\r\n<div class=\"row\">\r\n    <div class=\"col-md-4\">\r\n        <item-list class=\"latest\"></item-list>\r\n    </div>\r\n    <div class=\"col-md-4\">\r\n        <item-list class=\"most-viewed\"></item-list>\r\n    </div>\r\n    <div class=\"col-md-4\">\r\n        <item-list class=\"random\"></item-list>\r\n    </div>\r\n</div>\r\n\r\n\r\n"
 
 /***/ }),
 
 /***/ 324:
 /***/ (function(module, exports) {
 
-module.exports = "<div *ngIf=\"item\">\r\n    <h2>\r\n        <a href=\"#\" (click)=\"onBack()\">&laquo; Back to Home</a>\r\n    </h2>\r\n    <div class=\"item-container\">\r\n        <ul class=\"nav nav-tabs\">\r\n            <li role=\"presentation\" *ngIf=\"authService.isLoggedIn()\">\r\n                <a href=\"#\" (click)=\"onItemDetailEdit(item)\">Edit</a>\r\n            </li>\r\n            <li role=\"presentation\" class=\"active\">\r\n                <a href=\"#\">View</a>\r\n            </li>\r\n        </ul>\r\n        <div class=\"panel panel-default\">\r\n            <div class=\"panel-body\">\r\n                <div class=\"item-page-panel\">\r\n                    <img src=\"/assets/img/item-image-sample.png\" alt=\"{{item.Title}}\" />\r\n                    <div class=\"caption\">Sample image with caption.</div>\r\n                </div>\r\n                <h3>{{item.Title}}</h3>\r\n                <p>{{item.Description}}</p>\r\n                <p>{{item.Text}}</p>\r\n            </div>\r\n        </div>\r\n    </div>\r\n</div>"
+module.exports = "<div *ngIf=\"item\">\r\n    <h2>\r\n        <a href=\"#\" (click)=\"onBack()\">\r\n            &laquo; Back to Home\r\n        </a>\r\n    </h2>\r\n    <div class=\"item-container\">\r\n        <ul class=\"nav nav-tabs\">\r\n            <li role=\"presentation\" class=\"active\">\r\n                <a href=\"#\">Edit</a>\r\n            </li>\r\n            <li role=\"presentation\" *ngIf=\"item.Id != 0\">\r\n                <a href=\"#\" (click)=\"onItemDetailView(item)\">View</a>\r\n            </li>\r\n        </ul>\r\n        <div class=\"panel panel-default\">\r\n            <div class=\"panel-body\">\r\n               <form class=\"item-detail-edit\">\r\n                   <h3>\r\n                       {{item.Title}}\r\n                       <span class=\"empty-field\" [hidden]=\"dTitle.valid\">\r\n                           Empty Title\r\n                       </span>\r\n                   </h3>\r\n                   <div class=\"form-group has-feedback\" \r\n                        [ngClass]=\"{ 'has-success': dTitle.valid, 'has-error': !dTitle.valid }\">\r\n                       <label for=\"input-title\">Title</label>\r\n                       <input id=\"input-title\" name=\"input-title\"\r\n                              type=\"text\" class=\"form-control\"\r\n                              [(ngModel)]=\"item.Title\"\r\n                              placeholder=\"Insert the title...\"\r\n                              required #dTitle=\"ngModel\" />\r\n                       <span class=\"glyphicon form-control-feedback\" aria-hidden=\"true\"\r\n                             [ngClass]=\"{'glyphicon-ok': dTitle.valid, 'glyphicon-remove': !dTitle.valid}\"></span>\r\n                       <div [hidden]=\"dTitle.valid\" class=\"alert alert-danger\">\r\n                           You need to enter a valid Title.\r\n                       </div>\r\n                   </div>\r\n                   <div class=\"form-group\">\r\n                       <label for=\"input-description\">Description</label>\r\n                       <textarea id=\"input-description\" name=\"input-description\"\r\n                                 class=\"form-control\" [(ngModel)]=\"item.Description\"\r\n                                 placeholder=\"Insert a suitable description...\" required></textarea>\r\n                   </div>\r\n                   <div class=\"form-group\">\r\n                       <label for=\"input-text\">\r\n                           Text\r\n                       </label>\r\n                       <textarea id=\"input-text\" name=\"input-text\"\r\n                                 class=\"form-control\" [(ngModel)]=\"item.Text\"\r\n                                 placeholder=\"Insert a suitable description...\"></textarea>\r\n                   </div>\r\n                   <div *ngIf=\"item.Id == 0\" class=\"commands insert\">\r\n                       <input type=\"button\" class=\"btn btn-primary\"\r\n                              value=\"Save\" (click)=\"onInsert(item)\" />\r\n                       <input type=\"button\" class=\"btn btn-default\"\r\n                              value=\"Cancel\" (click)=\"onBack()\" />\r\n                   </div>\r\n                   <div *ngIf=\"item.Id != 0\" class=\"commands update\">\r\n                       <input type=\"button\" class=\"btn btn-primary\"\r\n                              value=\"Update\" (click)=\"onUpdate(item)\" />\r\n                       <input type=\"button\" class=\"btn btn-danger\"\r\n                              value=\"Delete\" (click)=\"onDelete(item)\" />\r\n                       <input type=\"button\" class=\"btn btn-default\"\r\n                              value=\"Cancel\" (click)=\"onItemDetailView(item)\" />\r\n                   </div>\r\n               </form>\r\n            </div>\r\n        </div>\r\n    </div>\r\n</div>"
 
 /***/ }),
 
 /***/ 325:
 /***/ (function(module, exports) {
 
-module.exports = "<h3 class=\"item-list-title\">\r\n    {{title}}\r\n</h3>\r\n<ul class=\"items\">\r\n    <li *ngFor=\"let item of items\"\r\n        [class.selected]=\"item === selectedItem\"\r\n        (click)=\"onSelect(item)\">\r\n        <div class=\"title\">{{item.Title}}</div>\r\n        <div class=\"description\">{{item.Description}}</div>\r\n    </li>\r\n</ul>"
+module.exports = "<div *ngIf=\"item\">\r\n    <h2>\r\n        <a href=\"#\" (click)=\"onBack()\">&laquo; Back to Home</a>\r\n    </h2>\r\n    <div class=\"item-container\">\r\n        <ul class=\"nav nav-tabs\">\r\n            <li role=\"presentation\" *ngIf=\"authService.isLoggedIn()\">\r\n                <a href=\"#\" (click)=\"onItemDetailEdit(item)\">Edit</a>\r\n            </li>\r\n            <li role=\"presentation\" class=\"active\">\r\n                <a href=\"#\">View</a>\r\n            </li>\r\n        </ul>\r\n        <div class=\"panel panel-default\">\r\n            <div class=\"panel-body\">\r\n                <div class=\"item-page-panel\">\r\n                    <img src=\"/assets/img/item-image-sample.png\" alt=\"{{item.Title}}\" />\r\n                    <div class=\"caption\">Sample image with caption.</div>\r\n                </div>\r\n                <h3>{{item.Title}}</h3>\r\n                <p>{{item.Description}}</p>\r\n                <p>{{item.Text}}</p>\r\n            </div>\r\n        </div>\r\n    </div>\r\n</div>"
 
 /***/ }),
 
 /***/ 326:
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"login-container\">\r\n    <h2 class=\"form-login-heading\">Login</h2>\r\n    <div class=\"alert alert-danger\" role=\"alert\" *ngIf=\"loginError\">\r\n        <strong>Warning</strong> Username or Password mismatch\r\n    </div>\r\n    <form class=\"form-login\" [formGroup]=\"loginForm\" (ngSubmit)=\"performLogin()\">\r\n        <input [formControl]=\"username\" type=\"text\" class=\"form-control\"\r\n               placeholder=\"Your username or email address\"\r\n               autofocus />\r\n        <!--<div *ngIf=\"!username.valid\" class=\"error message\">\r\n            Username is invalid.\r\n        </div>\r\n        <div *ngIf=\"username.hasError('required')\" class=\"error message\">\r\n            Username is required.\r\n        </div>-->\r\n        <input [formControl]=\"password\" type=\"password\" class=\"form-control\"\r\n               placeholder=\"Your password\" />\r\n        <div class=\"checkbox\">\r\n            <label>\r\n                <input type=\"checkbox\" value=\"remember-me\" />\r\n                Remember me\r\n            </label>\r\n        </div>\r\n        <div class=\"register-link\">\r\n            Don't have an account yet?\r\n            <a (click)=\"onRegister()\">Click here to register</a>\r\n        </div>\r\n        <button class=\"btn btn-lg btn-primary btn-block\" type=\"submit\">\r\n            Sign in\r\n        </button>\r\n    </form>\r\n</div>"
+module.exports = "<h3 class=\"item-list-title\">\r\n    {{title}}\r\n</h3>\r\n<ul class=\"items\">\r\n    <li *ngFor=\"let item of items\"\r\n        [class.selected]=\"item === selectedItem\"\r\n        (click)=\"onSelect(item)\">\r\n        <div class=\"title\">{{item.Title}}</div>\r\n        <div class=\"description\">{{item.Description}}</div>\r\n    </li>\r\n</ul>"
 
 /***/ }),
 
 /***/ 327:
 /***/ (function(module, exports) {
 
-module.exports = "<h2>{{title}}</h2>\r\n<div>\r\n    Oops.. This page does not exist (yet!).\r\n</div>"
+module.exports = "<div class=\"login-container\">\r\n    <h2 class=\"form-login-heading\">Login</h2>\r\n    <div class=\"alert alert-danger\" role=\"alert\" *ngIf=\"loginError\">\r\n        <strong>Warning</strong> Username or Password mismatch\r\n    </div>\r\n    <form class=\"form-login\" [formGroup]=\"loginForm\" (ngSubmit)=\"performLogin()\">\r\n        <input [formControl]=\"username\" type=\"text\" class=\"form-control\"\r\n               placeholder=\"Your username or email address\"\r\n               autofocus />\r\n        <!--<div *ngIf=\"!username.valid\" class=\"error message\">\r\n            Username is invalid.\r\n        </div>\r\n        <div *ngIf=\"username.hasError('required')\" class=\"error message\">\r\n            Username is required.\r\n        </div>-->\r\n        <input [formControl]=\"password\" type=\"password\" class=\"form-control\"\r\n               placeholder=\"Your password\" />\r\n        <div class=\"checkbox\">\r\n            <label>\r\n                <input type=\"checkbox\" value=\"remember-me\" />\r\n                Remember me\r\n            </label>\r\n        </div>\r\n        <div class=\"register-link\">\r\n            Don't have an account yet?\r\n            <a (click)=\"onRegister()\">Click here to register</a>\r\n        </div>\r\n        <button class=\"btn btn-lg btn-primary btn-block\" type=\"submit\">\r\n            Sign in\r\n        </button>\r\n    </form>\r\n</div>"
 
 /***/ }),
 
 /***/ 328:
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"user-container\">\r\n    <form class=\"form-user\" [formGroup]=\"userForm\" (ngSubmit)=\"onSubmit()\">\r\n\r\n        <h2 class=\"form-user-heading\">\r\n            {{title}}\r\n        </h2>\r\n        <!--Username-->\r\n        <div class=\"form-group\">\r\n            <input [formControl]=\"userForm.controls.username\" type=\"text\"\r\n                   class=\"form-control\"\r\n                   placeholder=\"Choose an Username\"\r\n                   autofocus />\r\n            <span class=\"validator-label valid\"\r\n                  *ngIf=\"userForm.controls.username.valid\">\r\n                <span class=\"glyphicon glyphicon-ok\" aria-hidden=\"true\"></span> valid!\r\n            </span>\r\n            <span class=\"validator-label invalid\"\r\n                  *ngIf=\"!userForm.controls.username.valid && !userForm.controls.username.pristine\">\r\n                <span class=\"glyphicon glyphicon-remove\" ariahidden=\"true\"></span> invalid\r\n            </span>\r\n        </div>\r\n        <!--Email-->\r\n        <div class=\"form-group\">\r\n            <input [formControl]=\"userForm.controls.email\" type=\"text\"\r\n                   class=\"form-control\"\r\n                   placeholder=\"Type your e-mail address\" />\r\n            <span class=\"validator-label valid\"\r\n                  *ngIf=\"userForm.controls.email.valid\">\r\n                <span class=\"glyphicon glyphicon-ok\" aria-hidden=\"true\"></span> valid!\r\n            </span>\r\n            <span class=\"validator-label invalid\"\r\n                  *ngIf=\"!this.userForm.controls.email.valid && !this.userForm.controls.email.pristine\">\r\n                <span class=\"glyphicon glyphicon-remove\" ariahidden=\"true\"></span> invalid\r\n            </span>\r\n        </div>\r\n        <!--Email-->\r\n        <div class=\"form-group\">\r\n            <input [formControl]=\"userForm.controls.password\" type=\"password\"\r\n                   class=\"form-control\"\r\n                   placeholder=\"Choose a Password\" />\r\n            <span class=\"validator-label valid\"\r\n                  *ngIf=\"userForm.controls.password.valid\">\r\n                <span class=\"glyphicon glyphicon-ok\" aria-hidden=\"true\"></span> valid!\r\n            </span>\r\n            <span class=\"validator-label invalid\"\r\n                  *ngIf=\"!userForm.controls.password.valid && !userForm.controls.password.pristine\">\r\n                <span class=\"glyphicon glyphicon-remove\" ariahidden=\"true\"></span> invalid\r\n            </span>\r\n        </div>\r\n        <!--Password confirm-->\r\n        <div class=\"form-group\">\r\n            <input [formControl]=\"userForm.controls.passwordConfirm\" type=\"password\"\r\n                   class=\"form-control\"\r\n                   placeholder=\"Confirm your Password\" />\r\n            <span class=\"validator-label valid\"\r\n                  *ngIf=\"userForm.controls.passwordConfirm.valid\r\n                         && !userForm.controls.password.pristine \r\n                         && !userForm.hasError('compareField')\">\r\n                <span class=\"glyphicon glyphicon-ok\" aria-hidden=\"true\"></span> valid!\r\n            </span>\r\n            <span class=\"validator-label invalid\"\r\n                  *ngIf=\"(!userForm.controls.passwordConfirm.valid && !userForm.controls.password.pristine)\r\n                            || userForm.hasError('compareField')\">\r\n                <span class=\"glyphicon glyphicon-remove\" ariahidden=\"true\"></span> invalid\r\n            </span>\r\n        </div>\r\n        <!--Display Name-->\r\n        <div class=\"form-group\">\r\n            <input [formControl]=\"userForm.controls.displayName\"\r\n                   type=\"text\" class=\"form-control\"\r\n                   placeholder=\"Choose a Display Name\" />\r\n        </div>\r\n\r\n        <!--Buttons-->\r\n        <div class=\"form-group\">\r\n            <input type=\"submit\" class=\"btn  btn-primary btn-block\" [disabled]=\"!userForm-valid\"\r\n                   value=\"Register\" />\r\n\r\n        </div>\r\n\r\n    </form>\r\n</div>"
+module.exports = "<h2>{{title}}</h2>\r\n<div>\r\n    Oops.. This page does not exist (yet!).\r\n</div>"
+
+/***/ }),
+
+/***/ 329:
+/***/ (function(module, exports) {
+
+module.exports = "<div class=\"user-container\">\r\n    <form class=\"form-user\" [formGroup]=\"userForm\" (ngSubmit)=\"onSubmit()\">\r\n\r\n        <h2 class=\"form-user-heading\">\r\n            {{title}}\r\n        </h2>\r\n        <!--Username-->\r\n        <div class=\"form-group\">\r\n            <input [formControl]=\"userForm.controls.username\" type=\"text\"\r\n                   class=\"form-control\"\r\n                   placeholder=\"Choose an Username\"\r\n                   autofocus />\r\n            <span class=\"validator-label valid\"\r\n                  *ngIf=\"userForm.controls.username.valid\">\r\n                <span class=\"glyphicon glyphicon-ok\" aria-hidden=\"true\"></span> valid!\r\n            </span>\r\n            <span class=\"validator-label invalid\"\r\n                  *ngIf=\"!userForm.controls.username.valid && !userForm.controls.username.pristine\">\r\n                <span class=\"glyphicon glyphicon-remove\" ariahidden=\"true\"></span> invalid\r\n            </span>\r\n        </div>\r\n        <!--Email-->\r\n        <div class=\"form-group\">\r\n            <input [formControl]=\"userForm.controls.email\" type=\"text\"\r\n                   class=\"form-control\"\r\n                   placeholder=\"Type your e-mail address\" />\r\n            <span class=\"validator-label valid\"\r\n                  *ngIf=\"userForm.controls.email.valid\">\r\n                <span class=\"glyphicon glyphicon-ok\" aria-hidden=\"true\"></span> valid!\r\n            </span>\r\n            <span class=\"validator-label invalid\"\r\n                  *ngIf=\"!this.userForm.controls.email.valid && !this.userForm.controls.email.pristine\">\r\n                <span class=\"glyphicon glyphicon-remove\" ariahidden=\"true\"></span> invalid\r\n            </span>\r\n        </div>\r\n        <!--Password current-->\r\n        <div class=\"form-group\" *ngIf=\"!this.isRegister\">\r\n            <input [formControl]=\"userForm.controls.passwordCurrent\" type=\"password\"\r\n                   class=\"form-control\"\r\n                   placeholder=\"Current Password\" />\r\n            <span class=\"validator-label invalid\"\r\n                  *ngIf=\"!userForm.controls.passwordCurrent.valid\">\r\n                <span class=\"glyphicon glyphicon-remove\" aria-hidden=\"true\"></span>\r\n                required\r\n            </span>\r\n        </div>\r\n        <!--Password-->\r\n        <div class=\"form-group\">\r\n\r\n            <input [formControl]=\"userForm.controls.password\" type=\"password\"\r\n                   class=\"form-control\"\r\n                   placeholder=\"Choose a Password\" />\r\n            <span class=\"validator-label valid\"\r\n                  *ngIf=\"userForm.controls.password.valid\">\r\n                <span class=\"glyphicon glyphicon-ok\" aria-hidden=\"true\"></span> valid!\r\n            </span>\r\n            <span class=\"validator-label invalid\"\r\n                  *ngIf=\"!userForm.controls.password.valid && !userForm.controls.password.pristine\">\r\n                <span class=\"glyphicon glyphicon-remove\" ariahidden=\"true\"></span> invalid\r\n            </span>\r\n        </div>\r\n        <!--Password confirm-->\r\n        <div class=\"form-group\">\r\n            <input [formControl]=\"userForm.controls.passwordConfirm\" \r\n                   type=\"password\"\r\n                   class=\"form-control\"\r\n                   placeholder=\"Confirm your Password\"\r\n                   [disabled]=\"!isRegister\" />\r\n            <span class=\"validator-label valid\"\r\n                  *ngIf=\"userForm.controls.passwordConfirm.valid\r\n                         && !userForm.controls.password.pristine \r\n                         && !userForm.hasError('compareField')\">\r\n                <span class=\"glyphicon glyphicon-ok\" aria-hidden=\"true\"></span> valid!\r\n            </span>\r\n            <span class=\"validator-label invalid\"\r\n                  *ngIf=\"(!userForm.controls.passwordConfirm.valid && !userForm.controls.password.pristine)\r\n                            || userForm.hasError('compareField')\">\r\n                <span class=\"glyphicon glyphicon-remove\" ariahidden=\"true\"></span> invalid\r\n            </span>\r\n        </div>\r\n        <!--Display Name-->\r\n        <div class=\"form-group\">\r\n            <input [formControl]=\"userForm.controls.displayName\"\r\n                   type=\"text\" class=\"form-control\"\r\n                   placeholder=\"Choose a Display Name\" />\r\n        </div>\r\n\r\n        <!--Buttons-->\r\n        <div class=\"form-group\">\r\n            <input type=\"submit\" class=\"btn  btn-primary btn-block\" \r\n                   [disabled]=\"!userForm-valid\"\r\n                   value=\"{{isRegister ? 'Register' : 'Save'}}\" />\r\n\r\n        </div>\r\n\r\n    </form>\r\n</div>"
 
 /***/ }),
 
@@ -1286,7 +1357,7 @@ var _a;
 
 /***/ }),
 
-/***/ 612:
+/***/ 613:
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__(244);
@@ -1362,5 +1433,5 @@ var _a;
 
 /***/ })
 
-},[612]);
+},[613]);
 //# sourceMappingURL=main.bundle.js.map
